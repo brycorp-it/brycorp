@@ -1,5 +1,53 @@
+/* Base Styles */
+body {
+    background-color: #F8F9FA;
+    color: #222222;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Update Hero Section to match the logo container */
 .hero-section {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    background: linear-gradient(135deg, #1C1C1C, #2D2D2D);
+    color: #FFFFFF;
     padding: 120px 0;
+}
+
+/* Custom Metallic/Silver Buttons */
+.btn-silver {
+    background: linear-gradient(135deg, #C0C0C0, #E5E5E5);
+    color: #1C1C1C !important;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-silver:hover {
+    background: linear-gradient(135deg, #E5E5E5, #FFFFFF);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-silver {
+    background: transparent;
+    color: #E5E5E5 !important;
+    border: 2px solid #C0C0C0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-silver:hover {
+    background: #C0C0C0;
+    color: #1C1C1C !important;
+}
+
+/* Typography Overrides */
+.text-silver-accent {
+    color: #C0C0C0 !important;
+}
+
+/* Badges and Icons */
+.bg-silver-badge {
+    background-color: #2D2D2D;
+    color: #E5E5E5;
+    border: 1px solid #C0C0C0;
 }
