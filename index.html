@@ -1,93 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRYCORP | Next-Gen Software Engineering</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <script src="scripts/template.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRYCORP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
+    <header class="site-header">
+        <img src="assets/logo.svg" alt="Brycorp Logo" class="header-logo" />
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="assets/logo.png" alt="BRYCORP Logo" class="img-fluid" style="max-height: 40px;"> BRYCORP
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-
-                    <li class="nav-item"><a class="nav-link btn btn-outline-info btn-sm ms-lg-3 px-3 text-white"
-                            href="contact.html">Get a Quote</a></li>
-                </ul>`
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section text-center text-md-start">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-md-6">
-                    <h1 class="display-4 fw-bold mb-3">We Build Scalable Digital Solutions</h1>
-                    <p class="lead text-white-50 mb-4">From enterprise cloud architecture to sleek consumer
-                        applications, we transform complex business challenges into elegant software.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="contact.html" class="btn btn-silver btn-lg px-4 me-md-2">Let's Collaborate</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <i class="text-silver-accent" style="font-size: 12rem;"></i>
-                </div>
-            </div>
+        <div class="brand-text">
+            <h1 class="brand-name">BRYCORP</h1>
+            <p class="brand-tagline">SOFTWARE SOLUTIONS</p>
         </div>
     </header>
 
-    <!-- Quick Stats / Trust Section -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h2 class="text-dark">150+</h2>
-                    <p class="text-muted mb-0">Custom Applications Deployed</p>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="construction-container">
+            <div class="brand-badge">BRYCORP</div>
+            <h1>Something great is in the works.</h1>
+            <p>Our new software solutions platform is currently under construction. Stay tuned.</p>
+
+            <div class="countdown-container">
+                <div class="time-box">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label">Days</span>
                 </div>
-                <div class="col-md-4">
-                    <h2 class="text-dark">99.9%</h2>
-                    <p class="text-muted mb-0">Cloud Infrastructure Uptime</p>
+                <div class="time-box">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">Hours</span>
                 </div>
-                <div class="col-md-4">
-                    <h2 class="text-dark">24/7</h2>
-                    <p class="text-muted mb-0">Dedicated Engineering Support</p>
+                <div class="time-box">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Mins</span>
                 </div>
+                <div class="time-box">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Secs</span>
+                </div>
+            </div>
+
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white-50 py-4 border-top border-secondary">
-        <div class="container text-center text-md-between d-md-flex align-items-center">
-            <div class="mb-2 mb-md-0">
-                <p class="small mb-0">&copy; 2026 BRYCORP (Pty) Ltd.<br/> All rights reserved.</p>
+    <div class="logo-ticker">
+        <div class="ticker-track">
+            <div class="logo-slide">
+                <img src="assets/technologies/azure.svg" alt="azure">
+                <img src="assets/technologies/csharp.svg" alt="csharp">
+                <img src="assets/technologies/css.svg" alt="css">
+                <img src="assets/technologies/dotnet.svg" alt="dotnet">
+                <img src="assets/technologies/firebase-wordmark.svg" alt="firebase">
+                <img src="assets/technologies/html5.svg" alt="html5">
+                <img src="assets/technologies/javascript.svg" alt="javascript">
+                <img src="assets/technologies/microsoft.svg" alt="microsoft">
+                <img src="assets/technologies/n8n.svg" alt="n8n">
+                <img src="assets/technologies/powershell.svg" alt="powershell">
+                <img src="assets/technologies/python.svg" alt="python">
             </div>
-            <div class="small">
-                <a href="privacy-policy.html" class="text-white-50 text-decoration-none me-3 hover-info">Privacy Policy</a>
-                <br/>
-                <a href="terms.html" class="text-white-50 text-decoration-none">Terms of Service</a>
+
+            <div class="logo-slide">
+                <img src="assets/technologies/azure.svg" alt="azure">
+                <img src="assets/technologies/csharp.svg" alt="csharp">
+                <img src="assets/technologies/css.svg" alt="css">
+                <img src="assets/technologies/dotnet.svg" alt="dotnet">
+                <img src="assets/technologies/firebase-wordmark.svg" alt="firebase">
+                <img src="assets/technologies/html5.svg" alt="html5">
+                <img src="assets/technologies/javascript.svg" alt="javascript">
+                <img src="assets/technologies/microsoft.svg" alt="microsoft">
+                <img src="assets/technologies/n8n.svg" alt="n8n">
+                <img src="assets/technologies/powershell.svg" alt="powershell">
+                <img src="assets/technologies/python.svg" alt="python">
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-column brand-col">
+                <h3 class="footer-logo-text">BRYCORP</h3>
+                <p class="footer-about">Providing cutting-edge software solutions to streamline corporate workflows and
+                    drive technological efficiency.</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li>Email: info@brycorp.co.za</li>
+                    <li>Phone: +27 (0) 67 106 3764</li>
+                    <li>Location: Gauteng, South Africa</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar: Legal & Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 BRYCORP (Pty) Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/countdown.js"></script>
 </body>
 
 </html>
