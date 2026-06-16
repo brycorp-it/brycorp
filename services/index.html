@@ -10,12 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <header class="site-header">
-        <img src="assets/logo.svg" alt="Brycorp Logo" class="header-logo" />
+        <img src="/assets/logo.svg" alt="Brycorp Logo" class="header-logo" />
 
         <div class="brand-text">
             <h1 class="brand-name">BRYCORP</h1>
@@ -25,10 +25,10 @@
 
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/services/">SERVICES</a></li>
+            <li><a href="/about/">ABOUT</a></li>
+            <li><a href="/contact/">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -39,7 +39,7 @@
 
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="assets/services/web-dev.svg" alt="Website Development">
+                    <img src="/assets/technologies/html5.svg" alt="Website Development">
                 </div>
                 <h3>Website Development</h3>
                 <p>We build fast, responsive, and search-optimized websites tailored to your brand. From sleek landing
@@ -54,7 +54,7 @@
 
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="assets/technologies/whatsapp.svg" alt="WhatsApp Automation">
+                    <img src="/assets/technologies/whatsapp.svg" alt="WhatsApp Automation">
                 </div>
                 <h3>WhatsApp Business Workflows</h3>
                 <p>Automate your client interactions, lead generation, and customer support. We design and build
@@ -70,7 +70,15 @@
             <!-- Service Card 2: Custom Software (Example) -->
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="assets/services/software-dev.svg" alt="Custom Software">
+                    <div class="code-animation-icon">
+                        <div class="terminal-header">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line line-1">&lt;/&gt; custom_dev</div>
+                            <div class="code-line line-2">deploy_build()</div>
+                        </div>
+                    </div>
                 </div>
                 <h3>Custom Software Solutions</h3>
                 <p>Tailored enterprise systems built using robust technologies like C# and .NET to streamline your core
@@ -97,10 +105,10 @@
             <div class="footer-column">
                 <h4>Navigation</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/services/">SERVICES</a></li>
+                    <li><a href="/about/">ABOUT</a></li>
+                    <li><a href="/contact/">CONTACT</a></li>
                 </ul>
             </div>
 
@@ -120,8 +128,8 @@
             <div class="footer-bottom-content">
                 <p>&copy; 2024 BRYCORP (Pty) Ltd. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/terms/">Terms of Service</a>
                 </div>
             </div>
         </div>
