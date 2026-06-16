@@ -32,66 +32,20 @@
         </ul>
     </nav>
 
-    <main class="contact-page-layout">
-        <div class="contact-hero">
-            <h1>Let's Build Something Together</h1>
-            <p>Have questions about website development or automation workflows? Reach out and we'll get back to you
-                within 24 hours.</p>
-        </div>
-
-        <div class="contact-grid">
-            <!-- Left Side: Contact Information Cards -->
-            <div class="contact-info-panel">
-                <div class="info-card">
-                    <h3>Direct Email</h3>
-                    <p>info@brycorp.co.za</p>
-                </div>
-                <div class="info-card">
-                    <h3>Business Hours</h3>
-                    <p>Monday — Friday<br>08:00 - 17:00 (SAST)</p>
-                </div>
-                <div class="info-card">
-                    <h3>Our Location</h3>
-                    <p>Gauteng, South Africa</p>
-                </div>
+    <main class="thank-you-layout">
+        <div class="thank-you-card">
+            <div class="success-icon">
+                <!-- Clean, stylized visual checkmark placeholder -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
             </div>
+            <h1>Message Received!</h1>
+            <p>Thank you for reaching out to BRYCORP. We have safely received your requirements and a team member will
+                get back to you as soon as possible.</p>
 
-            <!-- Right Side: The Interactive Form -->
-            <div class="contact-form-panel">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="63017911-8a07-42b8-9e0a-9d981ad115af">
-
-                    <!-- Optional: Redirects back to a custom thank-you page after submit -->
-                    <input type="hidden" name="redirect" value="https://www.brycorp.co.za/thank-you.html">
-
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Interested Service</label>
-                        <select id="service" name="service">
-                            <option value="general">General Inquiry</option>
-                            <option value="web-dev">Website Development</option>
-                            <option value="whatsapp">WhatsApp Business Workflows</option>
-                            <option value="custom-software">Custom Software Solutions</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Project Requirements</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Tell us about your requirements..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+            <div class="action-block">
+                <a href="index.html" class="return-btn">Return to Homepage</a>
             </div>
         </div>
     </main>
